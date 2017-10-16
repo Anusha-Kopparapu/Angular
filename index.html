@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+<script src="angular.js"></script>
+<title>Examples of Angular concepts</title>
+<body ng-app="myApp">
+ <!-- created own directive -->
+<div  w3-test-directive></div>
+<!-- hard coded onclick event  -->
+
+<div ng-controller="myCtrl">
+
+<button ng-click="count = count + 1">Click Me!</button>
+
+<p>{{ count }}</p>
+<!-- onclick event using a function -->
+
+<div ng-controller="MyController" >
+    <ul>
+        <li ng-repeat="item in myData.items"
+               ng-click="myData.doClick(item, $event)">Click here</li>
+    </ul>
+
+    {{data.time}}
+
+    <br/>
+    <button ng-click="updateTime()">update time - ng-click</button>
+    <button id="updateTimeButton"  >update time</button>
+</div>
+</div>
+</body>
+</html>
