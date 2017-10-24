@@ -1,32 +1,60 @@
 <!DOCTYPE html>
-<html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
-<script src="angular.js"></script>
-<title>Examples of Angular concepts</title>
-<body ng-app="myApp">
- <!-- created own directive -->
-<div  w3-test-directive></div>
-<!-- hard coded onclick event  -->
+<html lang="en_US">
+<head>
+<title>Layout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> 
+  <script src="angular.js"></script>
+</head>
+<body>
+<header><h2>Simple Layout</h2></header> 
+	 <div class="nav-side-menu">
+    <div class="brand">Brand Logo</div>
+    <i class="glyphicon glyphicon-minus glyphicon-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class=" glyphicon glyphicon-dashboard"></i> Dashboard
+                  </a>
+                </li>
 
-<div ng-controller="myCtrl">
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                  <a href="#"><i class="glyphicon glyphicon-gift"></i> UI Elements <span class="caret"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="products">
+                    <li class="active"><a href="#">CSS3 Animation</a></li>
+                </ul>
 
-<button ng-click="count = count + 1">Click Me!</button>
 
-<p>{{ count }}</p>
-<!-- onclick event using a function -->
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="glyphicon glyphicon-globe glyphicon-lg"></i> Services <span class="caret"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="service">
+                  <li>New Service 1</li>
+                </ul>
 
-<div ng-controller="MyController" >
-    <ul>
-        <li ng-repeat="item in myData.items"
-               ng-click="myData.doClick(item, $event)">Click here</li>
-    </ul>
+                 <li>
+                  <a href="#">
+                  <i class="glyphicon glyphicon-user"></i> Profile
+                  </a>
+                  </li>
 
-    {{data.time}}
-
-    <br/>
-    <button ng-click="updateTime()">update time - ng-click</button>
-    <button id="updateTimeButton"  >update time</button>
+                 <li>
+                  <a href="#">
+                  <i class="glyphicon glyphicon-user"></i> Users
+                  </a>
+                </li>
+            </ul>
+     </div>
 </div>
-</div>
+<footer>www.tcs.com</footer>
 </body>
 </html>
