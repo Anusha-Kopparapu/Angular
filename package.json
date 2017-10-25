@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.html"
+    "start": "node server.js",
+    "postinstall": "ng build --aot -prod"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/Anusha-Kopparapu/angular-layout/issues"
   },
+  "dependencies": {
+  // ...
+  "@angular/cli": "1.2.3",
+},
   "homepage": "https://github.com/Anusha-Kopparapu/angular-layout#readme"
+},
+"engines": {
+  "node": "6.11.1",
+  "npm": "3.10.9"
 }
