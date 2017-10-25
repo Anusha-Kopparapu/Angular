@@ -2,7 +2,7 @@
   "name": "angular-layout",
   "version": "1.0.0",
   "description": "Learning Angular JS topics",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -17,13 +17,5 @@
   "bugs": {
     "url": "https://github.com/Anusha-Kopparapu/angular-layout/issues"
   },
-  "dependencies": {
-  // ...
-  "@angular/cli": "1.2.3",
-},
   "homepage": "https://github.com/Anusha-Kopparapu/angular-layout#readme"
-},
-"engines": {
-  "node": "6.11.1",
-  "npm": "3.10.9"
 }
