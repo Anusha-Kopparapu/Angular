@@ -9,7 +9,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> 
-  <!-- <script src="angular.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.min.js"></script>
+  <script src="angular.js"></script>
 </head>
 <body>
     <header><h2>Simple Layout</h2></header> 
@@ -41,12 +42,13 @@
                   <li>New Service 1</li>
                 </ul>
 
-                 <li>
-                  <a href="#">
-                  <i class="glyphicon glyphicon-user"></i> Profile
-                  </a>
-                  </li>
-
+                 <li  data-toggle="collapse" data-target="#user" class="collapsed">
+                  <a href="#"><i class="glyphicon glyphicon-user"></i> Profile <span class="caret"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="user">
+                    <li class="active"><a href="#/anusha">Anusha K</a></li>
+                     <li class="active"><a href="#/bangaru">Bangaru P</a></li></ul>
+             
                  <li>
                   <a href="#">
                   <i class="glyphicon glyphicon-user"></i> Users
@@ -58,6 +60,7 @@
 <div class="col-sm-2"></div>
  <div class="col-sm-10">
   <div class="content" id="container">
+     <div ng-view></div>
 <p>
   Nancy Cartwright (born October 25, 1957) is an American actress and comedian. On the animated television series The Simpsons, she is the voice of Bart Simpson, as well as Nelson Muntz, Ralph Wiggum, and Todd Flanders. Her first professional role was voicing Gloria in the animated series Richie Rich, followed by a starring role in the television movie Marian Rose White (1982). In 1987, intending to audition for the role of Lisa Simpson in a series of animated shorts, she found Bart more interesting, and was offered the role on the spot by Matt Groening, the series' creator. She held the role for three seasons on The Tracey Ullman Show, and has voiced Bart for 29 seasons on The Simpsons, winning an Emmy and an Annie Award for her work. Cartwright has also voiced Daffney Gillfin in The Snorks, Rufus in Kim Possible, Mindy in Animaniacs, Margo Sherman in The Critic, and Chuckie in Rugrats and All Grown Up! She has adapted her autobiography, My Life as a 10-Year-Old Boy (2000), into a one-woman play. (Full article...)
 
