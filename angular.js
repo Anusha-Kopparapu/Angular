@@ -1,12 +1,12 @@
-var app=angular.module('userApp',['ngRoute']);
-app.config(['$routeProvider',function ($routeProvider) {
+angular.module('routeConfig',['ngRoute'])
+.config(function ($routeProvider) {
     $routeProvider
     .when("/anusha", {
-            templateUrl: "hfpage.html"
+            templateUrl: "/hfpage.html"
              // controller: "profileCont"
          })
     .when("/bangaru", {
-            templateUrl: "hfpage.html"
+            templateUrl: "/hfpage.html"
              // controller: "profileCont"
          }); 
-}]);
+});
