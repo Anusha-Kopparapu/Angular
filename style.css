@@ -38,7 +38,6 @@ footer {
   position: fixed;
   top: 80px;
   width: 200px;
-  height: 100%;
   color: #e1ffff;
   padding: 10px 10px;
 } 
@@ -73,14 +72,6 @@ footer {
 .nav-side-menu li .active {
   background-color: #4f5b69;
 }
-/*.nav-side-menu ul .sub-menu li.active,
-.nav-side-menu li .sub-menu li.active {
-  color: #d19b3d;
-}
-.nav-side-menu ul .sub-menu li.active a,
-.nav-side-menu li .sub-menu li.active a {
-  color: #d19b3d;
-}*/
 .nav-side-menu ul .sub-menu li,
 .nav-side-menu li .sub-menu li {
   background-color: #181c20;
@@ -89,10 +80,6 @@ footer {
   border: 1px solid #23282e;
   margin-left: 0px;
 }
-/*.nav-side-menu ul .sub-menu li:hover,
-.nav-side-menu li .sub-menu li:hover {
-  background-color: #020203;
-}*/
 .nav-side-menu ul .sub-menu li:before,
 .nav-side-menu li .sub-menu li:before {
   content: "\f105";
@@ -104,7 +91,6 @@ footer {
 .nav-side-menu li {
   padding-left: 0px;
   border: 1px solid #23282e;
-  /*border: 1px solid #23282e;*/
 }
 .nav-side-menu li a {
   text-decoration: none;
@@ -115,20 +101,14 @@ footer {
   width: 20px;
   padding-right: 20px;
 }
-/*.nav-side-menu li:hover {
-  border: 3px solid #d19b3d;
-  background-color: #4f5b69;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-}*/
 @media (max-width: 767px) {
   .nav-side-menu {
-    position: relative;
+    position: fixed;
     width: 100%;
-    margin-bottom: 10px;
+     z-index: 1;
+  }
+  .content {
+    padding-top: 70px;
   }
   .nav-side-menu .toggle-btn {
     display: block;
@@ -150,7 +130,7 @@ footer {
     line-height: 50px !important;
 
   }
-  .glyphicon-menu-hamburger{
+    .glyphicon-menu-hamburger{
     font-size:1.3em;
   }
 }
@@ -158,9 +138,22 @@ footer {
   .nav-side-menu .menu-list .menu-content {
     display: block;
   }
+  .nav-side-menu {
+    height: 100%;
+  }
 }
 body {
   margin: 0px;
   padding: 0px;
- /* background-color: #5bbed3;*/
+}
+ .user-image img { 
+  clear: both;
+   margin: auto;
+    position: relative;
+     position: relative;
+    margin-top: 40px;
+    height: 132px;
+    width: 132px;
+    right: -307px;
+    top: 49px;
 }
