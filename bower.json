@@ -1,0 +1,24 @@
+{
+  "name": "bower basic components",
+  "description": "bower basic components learning",
+  "main": "server.js",
+  "authors": [
+    "Anusha"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Anusha-Kopparapu/angular-layout",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.4.0"
+  },
+  "resolutions": {
+    "angular": "1.4.0"
+  }
+}
